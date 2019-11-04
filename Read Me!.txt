@@ -1,0 +1,20 @@
+The ZCC connectivity tool
+Version 1.0
+
+
+The tool was designed to save time on cases where we need to perform mass connectivity checks from the ZCC to both customer and CSP environments.
+The tool will by default run 10 pings to each entry in the iptables unless specified otherwise in the relevant parameter.
+The tool will also telnet each ZVM over port 9081 and each VRA over ports 4007 and 4008.
+
+While it is running, the tool will create a file called "Connectivity test output.txt" which will contain the results of the test.
+Please make sure to upload the file to the Zerto support ticket if relevant.
+
+
+### For security reasons, it is recommended to download the tool and place a new copy of it on the environment in the beginning of each session. ###
+
+### Running the tool ###
+
+1) Download the ZIP file into the Zerto installation folder and extract it. 
+For the tool to properly run, it must be placed in a subfolder under the Zerto installation folder.
+2) Run the "Connectivity tool.ps1" file(Right click -> Run/Run with PowerShell)
+3) Fill the relevant fields and hit enter at the end.
